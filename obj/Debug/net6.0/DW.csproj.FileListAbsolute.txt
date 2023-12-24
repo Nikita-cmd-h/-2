@@ -1,0 +1,15 @@
+C:\Users\Nikita\Desktop\Вя\DW\obj\Debug\net6.0\DW.csproj.AssemblyReference.cache
+C:\Users\Nikita\Desktop\Вя\DW\obj\Debug\net6.0\DW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikita\Desktop\Вя\DW\obj\Debug\net6.0\DW.AssemblyInfoInputs.cache
+C:\Users\Nikita\Desktop\Вя\DW\obj\Debug\net6.0\DW.AssemblyInfo.cs
+C:\Users\Nikita\Desktop\Вя\DW\obj\Debug\net6.0\DW.csproj.CoreCompileInputs.cache
+C:\Users\Nikita\Desktop\Вя\DW\bin\Debug\net6.0\DW.exe
+C:\Users\Nikita\Desktop\Вя\DW\bin\Debug\net6.0\DW.deps.json
+C:\Users\Nikita\Desktop\Вя\DW\bin\Debug\net6.0\DW.runtimeconfig.json
+C:\Users\Nikita\Desktop\Вя\DW\bin\Debug\net6.0\DW.dll
+C:\Users\Nikita\Desktop\Вя\DW\bin\Debug\net6.0\DW.pdb
+C:\Users\Nikita\Desktop\Вя\DW\obj\Debug\net6.0\DW.dll
+C:\Users\Nikita\Desktop\Вя\DW\obj\Debug\net6.0\refint\DW.dll
+C:\Users\Nikita\Desktop\Вя\DW\obj\Debug\net6.0\DW.pdb
+C:\Users\Nikita\Desktop\Вя\DW\obj\Debug\net6.0\DW.genruntimeconfig.cache
+C:\Users\Nikita\Desktop\Вя\DW\obj\Debug\net6.0\ref\DW.dll
