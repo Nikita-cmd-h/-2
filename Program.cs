@@ -3,7 +3,7 @@
 одновременно 7 и 23
 */
 /* Console.Write("Ведите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+int number = int.Parse(Console.ReadLine());
 if(number%7==0 && number%23==0){
     Console.WriteLine($"Число {number} кратно 7 и 23");
 }
@@ -22,9 +22,9 @@ int y = 0;
 
 while(condition==false){
     Console.Write("Ведите X: ");
-    int firstnumber = Convert.ToInt32(Console.ReadLine());
+    int firstnumber = int.Parse(Console.ReadLine());
     Console.Write("Ведите Y: ");
-    int secondnumber = Convert.ToInt32(Console.ReadLine());
+    int secondnumber = int.Parse(Console.ReadLine());
     if(firstnumber==0 | secondnumber==0){
         Console.WriteLine("Нельзя вводить x или y равные нулю!");
     }
@@ -60,13 +60,13 @@ Console.Write($"Координата ({x}; {y}) находится в {quarter} 
 на вход целое число из отрезка [10, 99] и показывает
 наибольшую цифру числа.
  */
-
+/* 
 bool condition = false;
 int number = 0;
 int maxfigure = 0;
 while(!condition){
     Console.Write("Введите число от 10 до 99: ");
-    number =  Convert.ToInt32(Console.ReadLine());
+    number =  int.Parse(Console.ReadLine());
     if(number>=10 & number<=99){
         condition = true;
     }else{
@@ -84,8 +84,40 @@ else{
     maxfigure=number/10;
     Console.Write($"Наибольшая цифра в числе {number} это {maxfigure}");
 }
-
+ */
 /*Задача 4: Напишите программу, которая на вход
 принимает натуральное число N, а на выходе
 показывает его цифры через запятую.
  */
+
+bool condition = false;
+int current = 0;
+int number = 0;
+int i = 10;
+string quantity="";
+
+while(!condition){
+    Console.Write("Введите любое натуральное число: ");
+    number =  int.Parse(Console.ReadLine()!);
+    if(number<0){
+        Console.WriteLine("Введите натуральное число!");
+    }else{
+        condition = true;
+        current=number;
+    }
+}
+while(i!=0){
+    if(number/i<1){
+        string q=$"{current%10}";
+        current=(number-number%i)/i;
+        quantity = $"{q}{quantity}";
+        i=0;
+    }else{
+        string q=$"{current%10}";
+        current=(number-number%i)/i;
+        quantity = $",{q}{quantity}";
+        i*=10;
+    }
+}
+
+Console.Write(quantity);
