@@ -15,6 +15,7 @@ else{
 0 и выдаёт номер координатной четверти плоскости,
 в которой находится эта точка.
 */
+/* 
 bool condition = false;
 int x = 0;
 int y = 0;
@@ -54,10 +55,35 @@ else{
 }
 
 Console.Write($"Координата ({x}; {y}) находится в {quarter} четверти");
-/*Задача 3: Напишите программу, которая принимает
+ */
+/* Задача 3: Напишите программу, которая принимает
 на вход целое число из отрезка [10, 99] и показывает
 наибольшую цифру числа.
-*/
+ */
+
+bool condition = false;
+int number = 0;
+int maxfigure = 0;
+while(!condition){
+    Console.Write("Введите число от 10 до 99: ");
+    number =  Convert.ToInt32(Console.ReadLine());
+    if(number>=10 & number<=99){
+        condition = true;
+    }else{
+        Console.WriteLine("Вводить число нужно от 10 и до 99 включительно!");
+    }
+}
+if(number/10<number%10){
+    maxfigure=number%10;
+    Console.Write($"Наибольшая цифра в числе {number} это {maxfigure}");
+}
+else if(number/10==number%10){
+    Console.Write($"Цифры в числе {number} равны");
+}
+else{
+    maxfigure=number/10;
+    Console.Write($"Наибольшая цифра в числе {number} это {maxfigure}");
+}
 
 /*Задача 4: Напишите программу, которая на вход
 принимает натуральное число N, а на выходе
